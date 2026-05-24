@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eesha Enterprises — Stationery & Procurement</title>
+  <meta name="description" content="Eesha Enterprises — Stationery, college lab equipment, electronics procurement and supply in Bengaluru, India." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img class="brand-mark" src="resources/brand-logo.jpg" alt="Eesha Enterprises logo" width="100" height="10000">
+        <span class="brand-name">Eesha Enterprises</span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="primary-nav">
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Reliable procurement for Stationery, Lab Equipment & Electronics</h1>
+          <p>We source and supply quality stationery, college lab equipment and electronic devices across Bengaluru and India — on time and within budget.</p>
+        <div class="hero-media" aria-hidden="true">
+          <figure class="image-frame">
+            <img src="resources/stationery.webp" alt="Stationery and office supplies" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>What we do</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="resources/stationery.webp" alt="Stationery" loading="lazy">
+            <h3>Stationery Supply</h3>
+            <p>High-quality stationery items for schools, colleges and offices — bulk & retail orders supported.</p>
+          </article>
+          <article class="card">
+            <img src="resources/lab-equipment.jpg" alt="Lab equipment" loading="lazy">
+            <h3>College Lab Equipment</h3>
+            <p>Procurement and installation support for laboratory furniture, instruments and consumables.</p>
+          </article>
+          <article class="card">
+            <img src="resources/electronics-procurement.jpg" alt="Electronics" loading="lazy">
+            <h3>Electronics Procurement</h3>
+            <p>Trusted sourcing of electronic devices and components, with warranty and after-sales coordination.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section products">
+      <div class="container">
+        <h2>Featured categories</h2>
+        <div class="grid products-grid">
+          <div class="product">
+            <img src="resources/stationery.webp" alt="Notebooks and pens" loading="lazy">
+            <h4>Stationery</h4>
+          </div>
+          <div class="product">
+            <img src="resources/lab-equipment.jpg" alt="Laboratory equipment" loading="lazy">
+            <h4>Lab Equipment</h4>
+          </div>
+          <div class="product">
+            <img src="resources/electronics-procurement.jpg" alt="Electronic devices" loading="lazy">
+            <h4>Electronics</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Eesha Enterprises</h2>
+        <p>We are a proprietorship based in Bengaluru serving educational institutions and businesses. Our focus is timely procurement, honest pricing, and long-term supplier relationships to deliver value to our customers.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <div class="contact-form">
+          <h2>Get in touch</h2>
+          <p>Send an email or call us — we respond quickly to enquiries and quote requests.</p>
+          <p><a class="btn" href="mailto:eeshaenterprises71@gmail.com">Email Us</a> <a class="btn ghost" href="tel:+917760412289">Call +91 77604 12289</a></p>
+        </div>
+        <aside class="contact-details">
+          <h3>Contact & Location</h3>
+          <p><strong>Email:</strong> <a href="mailto:eeshaenterprises71@gmail.com">eeshaenterprises71@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+917760412289">+91 77604 12289</a></p>
+          <address>
+            Veenakrupa, LD Block,<br>
+            Gangangar, Bengaluru - 560032<br>
+            Karnataka, India
+          </address>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Eesha Enterprises — Stationery • Lab Equipment • Electronics</p>
+      <p>Contact: <a href="mailto:eeshaenterprises71@gmail.com">eeshaenterprises71@gmail.com</a> • <a href="tel:+917760412289">+91 77604 12289</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Small script: set year and handle mobile nav toggle
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const navToggle = document.getElementById('nav-toggle');
+    const nav = document.getElementById('primary-nav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

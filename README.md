@@ -1,2 +1,13 @@
 # eeshaenterprises.github.io
-Proprietership website for Eesha Enterprises, which deals with procument and supply of Stationary, Lab electronics, digital devices and supplies to the institutions across india
+
+Proprietorship website for Eesha Enterprises, which deals with procurement and supply of stationery, lab equipment, electronics and digital devices to institutions across India.
+
+Local preview
+-------------
+
+Open `index.html` in a browser to preview the one-page static site. Files added:
+
+- `index.html` — main single-page website
+- `css/styles.css` — responsive styles
+
+The site uses semantic HTML, responsive CSS and minimal JavaScript for easy future enhancement and deployment (GitHub Pages, Netlify, etc.).
